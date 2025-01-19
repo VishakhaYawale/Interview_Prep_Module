@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php
+    include 'student_register.php';
+    include 'mentor_register.php'; 
+    include 'login.php';
+    include 'navbar.php';
+    ?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+   
+    <title>Welcome | CareerTime</title>
+    <style> 
+      
+      h1{
+        text-align: center; 
+        font-size: 30px;  
+        width: 1580px; 
+        height: 25px;
+        background-color:  #00CED1; 
+        padding: 50px; 
+        text-transform: uppercase; 
+        position: fixed; 
+        top: 0;    
+       } 
+        .header a{ 
+        padding: 10px 20px; 
+        border: 3px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 400;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+       
+       .btnone{ 
+        background: #00CED1;
+        color: white;  
+        } 
+        .btnone:hover{ 
+            color: white;
+        }
+       .header {
+        position: fixed;
+        top: 5%;
+        left: 3%;
+       } 
+       .leftside{
+        margin-top: 110px;
+        height: 400px; 
+        width: 400px;  
+        display: grid;
+        justify-content: space-around; 
+        align-items: center;
+        position: fixed;  
+       }
+       .leftone{
+        margin-left: 20px;  
+       }
+       .rightside{
+        margin-top: 110px;
+        height: 640px; 
+        width: 1155px;  
+        display: grid;
+        justify-content: space-around; 
+        align-items: center;
+        margin-left: 420px; 
+        position: fixed; 
+        overflow: scroll; 
+        background-image: url(../CareerTime/IMG/blue_background4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+       }
+       .rightone{
+        margin-left: 20px;   
+       }
+       .tips{
+        margin-left: 20px;    
+       }
+       h4{
+        text-align: center;    
+       }
+       .dropbtn {
+        background-color: #00CED1;
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        width: 400px;
+        border: none;
+        cursor: pointer;
+        display: block;
+      }
+      .dropbtn a{ 
+        padding: 12px 30px; 
+        border: 4px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #00CED1;
+      }
+      .dropbtn{
+          margin-top: 1px; 
+      }
+    </style>
+</head>
+<body>
+  <h1>
+    <u>Job Role Wise Questions</u>
+</h1>    
+<section>
+   <div class="leftside" id="scroll">
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Softwaredeveloper.html" class="btnone">Software Developer</a>  
+            </div>
+        </div>
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Webdeveloper1.html" class="btnone">Web Developers</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/DataScience.html" class="btnone">Data science</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/BusinessAnalyst.html" class="btnone">Business Analyst</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Networkadministrator.html" class="btnone">Network administrator</a>  
+            </div>
+        </div>
+   </div>
+
+   <div class="rightside" id="scrollone">
+        <div class="tips">  
+            <h4><b>Q1.  What is the difference between a hub and a switch?</b></h4><br>
+                <b>Ans:</b>
+                <p>At first glance it may be difficult to judge the difference between a hub and a switch since both look roughly the same. 
+                    They both have a large number of potential connections and are used for the same basic purpose- to create a network. 
+                    However the biggest difference is not on the outside, but on the inside in the way that they handle connections. 
+                    In the case of a hub, it broadcasts all data to every port. This can make for serious security and reliability concerns, 
+                    as well as cause a number of collisions to occur on the network. Old style hubs and present-day wireless access points use 
+                    this technique. Switches on the other hand create connections dynamically, so that usually only the requesting port can
+                     receive the information destined for it. An exception to this rule is that if the switch has its maintenance port turned 
+                     on for an NIDS implementation, it may copy all data going across the switch to a particular port in order to scan it for 
+                     problems. The easiest way to make sense of it all is by thinking about it in the case of old style phone connections. 
+                     A hub would be a ‘party line’ where everybody is talking all at the same time. It is possible to transmit on such a system,
+                      but it can be very hectic and potentially release information to people that you don’t want to have access to it. A switch
+                       on the other hand is like a phone operator- creating connections between ports on an as-needed basis.</p><br>
+
+            <h4><b>Q2. What is HTTP and what port does it use?</b></h4><br>
+            <b>Ans:</b>
+            <p>HTTP or HyperText Transfer Protocol, is the main protocol responsible for shiny content on the Web. Most webpages still use this protocol
+                 to transmit their basic website content and allows for the display and navigation of ‘hypertext’ or links. While HTTP can use a number
+                  of different carrier protocols to go from system to system, the primary protocol and port used is TCP port 80.</p><br>
+
+            <h4><b>Q3. What is FTP and what port does it use?</b></h4><br>
+            <b>Ans:</b>
+            <p>FTP or File Transfer Protocol, is one of the big legacy protocols that probably should be retired. FTP is primarily designed for 
+                large file transfers, with the capability of resuming downloads if they are interrupted. Access to an FTP server can be accomplished 
+                using two different techniques: Anonymous access and Standard Login. Both of these are basically the same, except Anonymous access does 
+                not require an active user login while a Standard Login does. Here’s where the big problem with FTP lies however- the credentials of the
+                 user are transmitted in cleartext which means that anybody listening on the wire could sniff the credentials extremely easily. Two competing 
+                 implementations of FTP that take care this issue are SFTP (FTP over SSH) and FTPS (FTP with SSL). FTP uses TCP ports 20 and 21.</p><br>
+
+
+            <h4><b>Q4.  What is DHCP?</b></h4><br>
+            <b>Ans:</b>
+            <p>Dynamic Host Configuration Protocol is the default way for connecting up to a network. The implementation varies across Operating Systems, but the simple
+                 explanation is that there is a server on the network that hands out IP addresses when requested. Upon connecting to a network, a DHCP request will 
+                 be sent out from a new member system. The DHCP server will respond and issue an address lease for a varying amount of time. If the system connects 
+                 to another network, it will be issued a new address by that server but if it re-connects to the original network before the lease is up- it will be 
+                 re-issued that same address that it had before. To illustrate this point, say you have your phone set to wifi at your home. It will pick up a DHCP 
+                 address from your router, before you head to work and connect to your corporate network. It will be issued a new address by your DHCP server before 
+                 you go to starbucks for your mid-morning coffee where you’ll get another address there, then at the local restaurant where you get lunch, then at the
+                  grocery store, and so on and so on.
+            </p><br>
+    
+            <h4><b>Q5. What is UDP?</b></h4><br>
+            <p>The twin to TCP is UDP- User Datagram Protocol. Where TCP has a lot of additional under-the-hood features to make sure that everybody stays on 
+                the same page, UDP can broadcast ‘into the dark’- not really caring if somebody on the other end is listening (and thus is often called a
+                 ‘connectionless’ protocol). As a result, the extra heavy lifting that TCP needs to do in order to create and maintain its connection isn’t 
+                 required so UDP oftentimes has a faster transmission speed than TCP. An easy way to picture the differences between these two protocols is like
+                  this: TCP is like a CB radio, the person transmitting is always waiting for confirmation from the person on the other end that they received the
+                   message. UDP on the other hand is like a standard television broadcast signal. The transmitter doesn’t know or care about the person on the other end, 
+                   all it does care about is that its signal is going out correctly. UDP is used primarily for ‘small’ bursts of information such as DNS requests where speed
+                    matters above nearly everything else. The above listing for TCP also contains counterparts for UDP, so it can be used as a reference for both.
+            </p><br>
+
+            <h4><b>Q6. What are IP Classes?</b></h4><br>
+            <b>Ans:</b>
+            <p>For the IP address that most people are familiar with (IPv4), there are 4 sets (octets) of numbers, each with values of up to 255. You likely have run 
+                into this when troubleshooting a router or a DHCP server, when they are giving out addresses in a particular range- usually 192.x or 10.x in the case of 
+                a home or commercial network. IP classes are primarily differentiated by the number of potential hosts they can support on a single network. The more networks
+                 supported on a given IP class, the fewer addresses are available for each network. Class A networks run up to 127.x.x.x (with the exception of 127.0.0.1, which 
+                 is reserved for loopback or localhost connections). These networks are usually reserved for the very largest of customers, or some of the original members of the
+                  Internet and xkcd has an excellent map (albeit a bit dated) located here showing who officially owns what. Class B (128.x to 191.x) and Class C (192.x to 223.x)
+                   networks are much more fuzzy at the top level about who officially owns them. Class C addresses are primarily reserved for in-house networks which is as we mentioned 
+                   above why so many different manufacturers use 192.x as their default setting. Class D and E are reserved for special uses and normally are not required knowledge.</p><br>
+
+            <h4><b>Q7. What is DNS?</b></h4><br>
+            <b>Ans:</b>
+            <p>In plain English, DNS is the Internet’s phone book. The Domain Name System is what makes it possible to only have to remember something like “cnn.com” instead of 
+                (at this particular moment) “157.166.226.26”. IP address change all the time however, although less so for mega-level servers. Human friendly names allow users to 
+                remember a something much easier and less likely to change frequently, and DNS makes it possible to map to those new addresses under the hood. If you were to look
+                 in a standard phone book and you know the name of the person or business you’re looking for, it will then show you the number for that person. DNS servers do exactly 
+                 the same thing but with updates on a daily or hourly basis. The tiered nature of DNS also makes it possible to have repeat queries responded to very quickly, although 
+                 it may take a few moments to discover where a brand new address is that you haven’t been to before. From your home, say that you wanted to go to the InfoSec Institute’s
+                  home page. You know the address for it, so you punch it in and wait. Your computer will first talk to your local DNS server (likely your home router) to see if it
+                   knows where it is. If it doesn’t know, it will talk to your ISP’s DNS server and ask it if it knows. If the ISP doesn’t know, it will keep going up the chain asking 
+                   questions until it reaches one of the 13 Root DNS Servers. The responding DNS server will send the appropriate address back down the pipe, caching it in each location
+                    as it does so to make any repeat requests much faster.</p><br>
+
+            <h4><b>Q8. What is IPX?</b></h4><br>
+            <b>Ans:</b>
+            <p>If you did any multiplayer PC gaming in the 90s and early 2000s, you likely knew of the IPX protocol as ‘the one that actually works’. IPX or Internetwork 
+                Packet Exchange was an extremely lightweight protocol, which as a result for the limits of computers of the age was a very good thing. A competitor to TCP/IP, 
+                it functions very well in small networks and didn’t require elements like DHCP and required little to no configuration, but does not scale well for applications
+                 like the Internet. As a result, it fell by the wayside and is now not a required protocol for most elements.</p><br>
+
+            <h4><b>Q 9. What are 127.0.0.1 and localhost?</b></h4><br>
+            <b>Ans:</b>
+            <p>Being able to ping out to a server and see if its responding is a great way to troubleshoot connectivity issues. But what if you’re not able to ping ANY server?
+                 Does that mean that your entire network is down? Does it mean that your network cable needs to be replaced? Does it mean that your network card is going bad? 
+                 Or could it possibly be that sunspots, magnets, aliens and the Men In Black are all conspiring against you? The answers to these questions could be very 
+                 difficult, but at the very least you can rule out if your network card is going bad. 127.0.0.1 is the loopback connection on your network interface card 
+                 (NIC)- pinging this address will see if it is responding. If the ping is successful, then the hardware is good. If it isn’t, then you might have some 
+                 maintenance in your future. 127.0.0.1 and localhost mean the same thing as far as most functions are concerned, however be careful when using them in
+                  situations like web programming as browsers can treat them very differently.</p><br>
+
+            <h4><b>Q 10. What is the difference between a workgroup and a domain?</b></h4><br>
+            <b>Ans:</b>
+            <p>A workgroup is a collection of systems each with their own rules and local user logins tied to that particular system. A Domain is a collection of
+                 systems with a centralized authentication server that tells them what the rules are. While workgroups work effectively in small numbers, once you 
+                 pass a relatively low threshold (usually anything more than say 5 systems), it becomes increasingly difficult to manage permissions and sharing 
+                 effectively. To put this another way, a workgroup is very similar to a P2P network- each member is its own island and chooses what it decides to 
+                 share with the rest of the network. Domains on the other hand are much more like a standard client/server relationship- the individual members 
+                 of the domain connect to a central server which handles the heavy lifting and standardization of sharing and access permissions.</p><br>
+
+            <h4><b>Q 11. How does Tracert work and what protocol does it use?</b></h4><br>
+            <b>Ans:</b>
+            <p>Tracert or traceroute depending on the operating system allows you to see exactly what routers you touch as you move along the chain of connections
+                 to your final destination. If you end up with a problem where you can’t connect or can’t ping your final destination, a tracert can help in that
+                  regard as you can tell exactly where the chain of connections stop. With this information, you can contact the correct people- whether it be 
+                  your own firewall, your ISP, your destination’s ISP or somewhere in the middle. Tracert, like ping, uses the ICMP protocol but also has the
+                   ability to use the first step of the TCP three-way handshake to send out SYN requests for a response.</p><br>
+         </div>
+   </div>   
+</section> 
+
+<div class="header">
+<a href="../CareerTime/index.php" class="btntwo">Back</a>
+    <?php
+    include 'footer.php';
+    ?>
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+</body>
+</html>

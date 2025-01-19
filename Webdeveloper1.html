@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php
+    include 'student_register.php';
+    include 'mentor_register.php'; 
+    include 'login.php';
+    include 'navbar.php';
+    ?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+ 
+    <title>Welcome | CareerTime</title>
+    <style> 
+      
+      h1{
+        text-align: center; 
+        font-size: 30px;  
+        width: 1580px; 
+        height: 25px;
+        background-color:  #00CED1; 
+        padding: 50px; 
+        text-transform: uppercase; 
+        position: fixed; 
+        top: 0;    
+       } 
+        .header a{ 
+        padding: 10px 20px; 
+        border: 3px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 400;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+       
+       .btnone{ 
+        background: #00CED1;
+        color: white;  
+        } 
+        .btnone:hover{ 
+            color: white;
+        }
+       .header {
+        position: fixed;
+        top: 5%;
+        left: 3%;
+       } 
+       
+       .leftside{
+        margin-top: 110px;
+        height: 400px; 
+        width: 400px;  
+        display: grid;
+        justify-content: space-around; 
+        align-items: center;
+        position: fixed;  
+       }
+       .leftone{
+        margin-left: 20px;  
+       }
+       .rightside{
+        margin-top: 110px;
+        height: 640px; 
+        width: 1155px;  
+        display: grid;
+        justify-content: space-around; 
+        align-items: center;
+        margin-left: 420px; 
+        position: fixed; 
+        overflow: scroll; 
+        background-image: url(../CareerTime/IMG/blue_background4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+       }
+       .rightone{
+        margin-left: 20px;   
+       }
+       .tips{
+        margin-left: 20px;    
+       }
+       h4{
+        text-align: center;    
+       }
+       .dropbtn {
+        background-color: #00CED1;
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        width: 400px;
+        border: none;
+        cursor: pointer;
+        display: block;
+      }
+      .dropbtn a{ 
+        padding: 12px 30px; 
+        border: 4px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #00CED1;
+      }
+      .dropbtn{
+          margin-top: 1px; 
+      }
+    </style>
+</head>
+<body>
+  <h1>
+    <u>Job Role Wise Questions</u>
+</h1>    
+<section>
+   <div class="leftside" id="scroll">
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Softwaredeveloper.html" class="btnone">Software Developer</a>  
+            </div>
+        </div>
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Webdeveloper1.html" class="btnone">Web Developers</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/DataScience.html" class="btnone">Data science</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/BusinessAnalyst.html" class="btnone">Business Analyst</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Networkadministrator.html" class="btnone">Network administrator</a>  
+            </div>
+        </div>
+   </div>
+
+   <div class="rightside" id="scrollone">
+        <div class="tips">  
+            <h4><b>Q1. What is a pseudo-class?</b></h4><br>
+                <b>Ans:</b>
+                <p>It is a CSS technique that sets the style when an element changes its state. E.g. style changes when mouse hover,
+                     different styles for visited or unvisited links, etc.</p><br>
+                <b>There are four different types of pseudo-classes:</b><br>
+                <ul>
+                    <li>1. Links: These pseudo-classes are used to style the link both in its normal state by default and when it has already been visited</li> 
+                    <li>2. Dynamic: Dynamic pseudo-classes can be applied to any element to define how they are shown when the cursor is located on them, or by clicking on them or when they are selected</li>
+                    <li>3. Structural: Structural pseudo-classes allow to style elements based on an exact numerical position of the element</li>
+                    <li>4. Others: Some elements can be styled differently based on the language or what type of label they are not.</li>
+                </ul>
+                <h4><b>Q2. What is Namespacing in JavaScript?</b></h4><br>
+                <b>Ans:</b>
+                <p>It is usually not a good practice to use global variables
+                     in programming languages including JavaScript. However, you may have to use global variables sometimes. 
+                     So, JavaScript introduces the concept of namespacing which ties down a part of the code and registers it with a
+                     unique name. The namespace is nothing more than a container name where we hold classes, functions, and variables
+                     that can be repeated with the same name in other namespaces or namespace without involving an error.</p><br>
+                <h4><b>Q3. How can you reduce page loading time?</b></h4><br>
+                <b>Ans:</b>
+                <ul>
+                    <li>1. Reduce the image size</li> 
+                    <li>2. Use the latest generation formats for images</li>
+                    <li>3. Minify HTML, CSS, and Javascript</li>
+                    <li>4. Postpone uploading off-screen images</li>
+                    <li>5. Create Accelerated Mobile Pages ( AMPs)</li> 
+                    <li>6. Remove unnecessary widgets</li>
+                    <li>7. Avoid multiple redirects</li>
+                    <li>8. Place CSS at the top and script referencing at the bottom or external files</li>
+                    <li>9. Reduce lookups</li> 
+                    <li>10.Minimize redirects and caching</li>
+                    <li>11.Check the current speed of the website</li>
+                    <li>12.Finding a good hosting to host your website</li>
+                    <li>13.Clean the web code</li>
+                </ul> 
+                <h4><b>Q4. What is CORS? Why is it important?</b></h4><br>
+                <b>Ans:</b>
+                <p>This is an important web development interview question. 
+                    Cross-Origin Resource Sharing (CORS) is a browser mechanism that allows controlled access to resources 
+                    located outside of a given domain. It enables a web page from one domain to access a resource with a different
+                    domain (a cross-domain request). It is a relaxation of the same-origin policy implemented in modern browsers. 
+                    Due to the same-origin policy followed by XMLHttpRequest and fetch, JavaScript can only make calls to URLs that
+                    live on the same origin as the location where the script is running. Without features like CORS, websites are restricted
+                    to accessing resources from the same origin through the same-origin policy.</p><br> 
+
+                <h4><b>Q5. What are the advantages of HTTP 2.0 over HTTP 1.1?</b></h4><br>
+                <b>Ans:</b>
+                <p>The major advantages of HTTP 2.0 over HTTP 1.1 include –  
+                    Cross-Origin Resource Sharing (CORS) is a browser mechanism that allows controlled access to resources 
+                    located outside of a given domain. It enables a web page from one domain to access a resource with a different
+                    domain (a cross-domain request). It is a relaxation of the same-origin policy implemented in modern browsers. 
+                    Due to the same-origin policy followed by XMLHttpRequest and fetch, JavaScript can only make calls to URLs that
+                    live on the same origin as the location where the script is running. Without features like CORS, websites are restricted
+                    to accessing resources from the same origin through the same-origin policy.</p><br>
+                    <ul>
+                        <li>1. Higher loading speed</li> 
+                        <li>2. Improvement of web positioning</li>
+                        <li>3. Automatic prioritization</li>
+                        <li>4. Less broadband consumption</li>
+                        <li>5. Immediate presentation</li>
+                    </ul>
+
+                <h4><b>Q6. List out newly introduced input types, APIs, form elements, and elements that support media content in HTML5.</b></h4><br>
+                <b>Ans:</b>              
+                 <p>List out newly introduced input types, APIs, form elements, and elements that support media content in HTML5. 
+                    HTML5 has been updated repeatedly in the last few years, and the addition of input types has greatly simplified its use.
+                   Among some of these input types are</p><br>
+
+                <ul>
+                    <li><b>1. Colour:</b> Enable users to select or choose a colour using the colour picker.</li> 
+                    <li><b>2. Date:</b> Enable users to select or choose a date from a drop-down calendar.</li>
+                    <li><b>3. Datetime-local:</b> Enable users to select or choose both local date and time.</li>
+                    <li><b>4. Email:</b> Enable users to enter an email address.</li>
+                    <li><b>5. Month:</b> Enable users to select or choose a month and year from a drop-down calendar.</li> 
+                    <li><b>6. Week:</b> Enable users to select or choose week and year from a drop-down calendar.
+                        HTML5 introduces the following new form elements:</li>
+                    <li><b>7. datalist:</b> Specifies a list of options for input controls.</li>
+                    <li><b>8. keygen:</b> Creates an encryption key.</li>
+                    <li><b>9. output:</b> Defines the result or output of an expression.</li> 
+                    <li><b>10.progress:</b> Heads in the direction of 100% of the maximum value.</li>
+                    <li><b>11.meter:</b> Provides a gauge that shows a general value within a range.
+                        The following are some of the new APIs introduced in HTML5:</li>
+                    <li><b>12.History API:</b> Provides programs with access to the browser's history.</li>
+                    <li><b>13.Page visibility API:</b> Enables us to determine the current visibility state of a page.</li>
+                    <li><b>14. Battery Status API: </b> Displays the current battery status of the device.</li> 
+                    <li><b>15. User Timing API:</b> Provides programmers with high-precision timestamps for measuring application performance.</li>
+                    <li><b>16. Vibration API:</b> Provides access to the device's vibration functionality.
+                        HTML5 includes five elements that support media as follows:</li>
+                    <li><b>17. audio:</b> Used to embed audio files in a web page</li>
+                    <li><b>18. video:</b> Used to embed video files in a web page.</li> 
+                    <li><b>19. source:</b> Used for attaching multimedia files, including audio, video, and photos.</li>
+                    <li><b>20. embed:</b> Used to embed external applications, usually multimedia content such as audio or video into an HTML document.</li>
+                    <li><b>21. track:</b> Specifies text tracks for audio and video components.</li>
+                </ul>
+
+                <h4><b>Q7.  Explain DOM (Document Object Model)?</b></h4><br>
+                <b>Ans:</b>
+                <p>DOM stands for Document Object Model. It is basically a cross-platform, language-independent API (Application Programming Interface) 
+                    for XML (Extensible Markup Language) and HTML documents. To put it simply, DOM describes the logical structure of documents and how 
+                    one can access and manipulate them. For example, here is an HTML document that illustrates the DOM hierarchy.
+                </p><br>
+                <img src="../CareerTime/IMG/DOM.jpeg" height="1300px" width="1100px"><br><br>
+                <p>These documents are usually treated as a tree structure in which every node is an object that represents a specific part of the document.
+                   In a tree, each branch ends with a node, and each node contains objects. The DOM represents the webpage in a hierarchical structure
+                   in order for programmers and users to navigate it more easily.
+                </p><br>
+
+                <h4><b>Q8. Describe the different kinds of HTTP requests supported by RESTful Web services.</b></h4><br>
+                <b>Ans:</b>
+                <p>Each HTTP request type in RESTful web services has a specific purpose. Below is a description of them:</p><br>
+                    <ul>
+                        <li><b>1. GET:</b> It is used to retrieve data or resources from the server but only allows read-only access. You cannot modify it.</li> 
+                        <li><b>2. POST:</b> It is used for creating a new resource.</li>
+                        <li><b>3. PUT:</b> This is similar to POST, but used for updating an existing resource (if the resource doesn't exist, the API will decide whether a new resource should be created).</li>
+                        <li><b>4. DELETE:</b> It is used to delete the resource from the server.</li>
+                        <li><b>5. TRACE:</b> It validates the content along with the network during an HTTP request.</li> 
+                    </ul>
+
+                <h4><b>Q9. How do you optimize the loading time of your web application as a Web Developer?</b></h4><br>
+                <b>Ans:</b>
+                <p>As a Web Developer, here are the top hacks for reducing load time and optimizing your web application's loading times:</p><br>
+                    <ul>
+                        <li><b>1. Image compression and optimization: </b> Using images on your website will improve the appearance and quality of your pages. However, larger images will also slow down the loading process.
+                             Compressing and optimizing images is one of the easiest ways to improve the speed of your site. The smaller your images' file sizes, the less weight they have, which, in turn, helps your pages load faster.</li> 
+                        <li><b>2. Put JavaScript and CSS in external files: </b> When JavaScript and CSS are embedded in HTML documents, they are downloaded each time the HTML document is loaded. As a result, this does not utilize browser 
+                            caching, increasing the size of HTML documents. You should always place CSS and JavaScript in external files; this is best practice and makes maintaining your site easier.</li>
+                        <li><b>3. Reduce the number of redirects:</b>  A website with too many redirects will take a long time to load. HTTP request and response times are prolonged every time a page redirects. If you eliminate unnecessary
+                             redirects on your site, your page load time will be significantly reduced.</li>
+                        <li><b>4. CSS and JavaScript files should be loaded asynchronously: </b> You have CSS and JavaScript files on your website that can be loaded synchronously or asynchronously. In synchronous loading, each file is loaded
+                             one at a time, in the order in which it appears on your web page. Asynchronous loading, on the other hand, allows multiple files to be loaded simultaneously, which can speed up the performance of a website. '</li>
+                        <li><b>5. Minify HTML, CSS, and JavaScript: </b> Your pages will load faster if you optimize how your files to load. In a similar vein, you can minify your HTML, CSS, and JavaScript code. You can reduce the size of
+                             files by eliminating unnecessary spaces, characters, comments, and other components. As a result, web pages will load faster with cleaner code.</li> 
+                    </ul>
+
+                <h4><b>Q 10. Why are media queries used in CSS?</b></h4><br>
+                <b>Ans:</b>
+                <p>Media queries are used in CSS to create responsive web designs. This means that the way a web page appears varies from one system to another based on the screen or the media type. The media query can be used to apply different
+                     styles or change the appearance (and even the behaviour) of a site or an app depending on a user's device type or specific characteristics (like browser viewport width, height, screen resolution, etc.). The following can be
+                      checked using media queries:</p><br>
+                    <ul>
+                        <li>Dimensions (width and height) of the viewport</li> 
+                        <li>Dimensions (width and height) of the device</li>
+                        <li>Orientation</li>
+                        <li>Resolution</li>
+                    </ul>
+         </div>
+   </div>
+    
+</section> 
+
+    <?php
+    include 'footer.php';
+    ?>
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+</body>
+</html>

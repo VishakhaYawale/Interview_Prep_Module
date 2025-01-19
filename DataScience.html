@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php
+    include 'student_register.php';
+    include 'mentor_register.php'; 
+    include 'login.php';
+    include 'navbar.php';
+    ?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    
+    <title>Welcome | CareerTime</title>
+    <style> 
+      
+      h1{
+        text-align: center; 
+        font-size: 30px;  
+        width: 1580px; 
+        height: 25px;
+        background-color:  #00CED1; 
+        padding: 50px; 
+        text-transform: uppercase; 
+        position: fixed; 
+        top: 0;    
+       } 
+        .header a{ 
+        padding: 10px 20px; 
+        border: 3px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 400;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+       
+    
+       .btnone{ 
+        background: #00CED1;
+        color: white;  
+        } 
+        .btnone:hover{ 
+            color: white;
+        }
+       .header {
+        position: fixed;
+        top: 5%;
+        left: 3%;
+       } 
+      
+       .leftside{
+        margin-top: 110px;
+        height: 400px; 
+        width: 400px;  
+        display: grid;
+        justify-content: space-around; 
+        align-items: center;
+        position: fixed;  
+       }
+       .leftone{
+        margin-left: 20px;  
+       }
+       .rightside{
+        margin-top: 110px;
+        height: 640px; 
+        width: 1155px; 
+        display: grid;
+        justify-content: space-around; 
+        align-items: center;
+        margin-left: 420px; 
+        position: fixed; 
+        overflow: scroll;
+        background-image: url(../CareerTime/IMG/blue_background4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+       }
+       .rightone{
+        margin-left: 20px;   
+       }
+       .tips{
+        margin-left: 20px;    
+       }
+       h4{
+        text-align: center;    
+       }
+       .dropbtn {
+        background-color: #00CED1;
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        width: 400px;
+        border: none;
+        cursor: pointer;
+        display: block;
+      }
+      .dropbtn a{ 
+        padding: 12px 30px; 
+        border: 4px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #00CED1;
+      }
+      .dropbtn{
+          margin-top: 1px; 
+      }
+    </style>
+</head>
+<body>
+  <h1>
+    <u>Job Role Wise Questions</u>
+</h1>    
+<section>
+   <div class="leftside" id="scroll">
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Softwaredeveloper.html" class="btnone">Software Developer</a>  
+            </div>
+        </div>
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Webdeveloper1.html" class="btnone">Web Developers</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/DataScience.html" class="btnone">Data science</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/BusinessAnalyst.html" class="btnone">Business Analyst</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Networkadministrator.html" class="btnone">Network administrator</a>  
+            </div>
+        </div>
+   </div>
+
+   <div class="rightside" id="scrollone">
+        <div class="tips">  
+            <h4><b>Q1. What does one understand by the term Data Science?</b></h4><br>
+                <b>Ans:</b>
+                <p>An interdisciplinary field that constitutes various scientific processes, algorithms, tools, and machine learning techniques
+                   working to help find common patterns and gather sensible insights from the given raw input data using statistical and mathematical
+                   analysis is called Data Science.</p><br>
+                <b>The following figure represents the life cycle of data science.</b><br>
+                <img src="../CareerTime/IMG/DataScience.jpeg" height="800px" width="1100px"><br><br>
+                <ul>
+                    <li>1. It starts with gathering the business requirements and relevant data.</li> 
+                    <li>2. Once the data is acquired, it is maintained by performing data cleaning, data warehousing, data staging, and data architecture.</li>
+                    <li>3. Data processing does the task of exploring the data, mining it, analyzing it which can be finally used to generate the summary of the insights extracted from the data.</li>
+                    <li>4. Once the exploratory steps are completed, the cleansed data is subjected to various algorithms like predictive analysis, regression, text mining, recognition patterns, etc depending on the requirements.</li>
+                    <li>5. In the final stage, the results are communicated to the business in a visually appealing manner. This is where the skill of data visualization, reporting, and different business intelligence tools come into the picture.</li> 
+                </ul><br>
+
+            <h4><b>Q2. What is the difference between data analytics and data science?</b></h4><br>
+            <ul>
+                <li>1. Data science involves the task of transforming data by using various technical analysis methods to extract meaningful insights using which a data analyst can apply to their business scenarios.</li> 
+                <li>2. Data analytics deals with checking the existing hypothesis and information and answers questions for a better and effective business-related decision-making process.</li>
+                <li>3. Data Science drives innovation by answering questions that build connections and answers for futuristic problems. Data analytics focuses on getting present meaning from existing historical context whereas data science focuses on predictive modeling.</li>
+                <li>4. Data Science can be considered as a broad subject that makes use of various mathematical and scientific tools and algorithms for solving complex problems whereas data analytics can be considered as a specific field dealing with specific concentrated problems using fewer tools of statistics and visualization.</li>
+            </ul>
+            <b>The following Venn diagram depicts the difference between data science and data analytics clearly:</b><br>
+            <img src="../CareerTime/IMG/DatascienceQ_2.jpeg" height="500px" width="1100px"><br><br>
+
+            <h4><b>Q3. What are some of the techniques used for sampling? What is the main advantage of sampling?</b></h4><br>
+            <b>Ans:</b>
+            <p>Data analysis can not be done on a whole volume of data at a time especially when it involves larger datasets. It becomes crucial to take some data samples that can be used for representing the whole population and then perform analysis on it. While doing this, it is very much necessary to carefully take sample 
+                data out of the huge data that truly represents the entire dataset.</p><br>
+            <img src="../CareerTime/IMG/DatascienceQ_3.jpeg" height="500px" width="1100px"><br><br>
+            <b>There are majorly two categories of sampling techniques based on the usage of statistics, they are:</b><br>
+            <ul>
+                <li><b>1. Probability Sampling techniques:</b> Clustered sampling, Simple random sampling, Stratified sampling.</li> 
+                <li><b>2. Non-Probability Sampling techniques:</b> Quota sampling, Convenience sampling, snowball sampling, etc.</li>
+            </ul><br>
+
+            <h4><b>Q4.  What are Eigenvectors and Eigenvalues?</b></h4><br>
+            <b>Ans:</b>
+            <p>Eigenvectors are column vectors or unit vectors whose length/magnitude is equal to 
+                1. They are also called right vectors. Eigenvalues are coefficients that are applied on eigenvectors which give these vectors different values for length or magnitude.
+                A matrix can be decomposed into Eigenvectors and Eigenvalues and this process is called Eigen decomposition. These are then eventually used in machine learning methods 
+                like PCA (Principal Component Analysis) for gathering valuable insights from the given matrix.
+            </p><br>
+            <img src="../CareerTime/IMG/DatascienceQ_6.jpeg" height="500px" width="1100px"><br><br>
+
+            <h4><b>Q5. What does it mean when the p-values are high and low?</b></h4><br>
+            <p>A p-value is the measure of the probability of having results equal to or more than the results achieved under a specific hypothesis assuming that the null hypothesis is correct.
+                 This represents the probability that the observed difference occurred randomly by chance.
+            </p><br>
+            <ul>
+                <li>1. Low p-value which means values ≤ 0.05 means that the null hypothesis can be rejected and the data is unlikely with true null.</li> 
+                <li>2. High p-value, i.e values ≥ 0.05 indicates the strength in favor of the null hypothesis. It means that the data is like with true null.</li>
+                <li>3. p-value = 0.05 means that the hypothesis can go either way.</li>
+            </ul>
+
+            <h4><b>Q6. Define the terms KPI, lift, model fitting, robustness and DOE.</b></h4><br>
+            <ul>
+                <li><b>1. KPI:</b> KPI stands for Key Performance Indicator that measures how well the business achieves its objectives.</li> 
+                <li><b>2. Lift: </b> This is a performance measure of the target model measured against a random choice model. Lift indicates how good the model is at prediction versus if there was no model.</li>
+                <li><b>3. Model fitting: </b>This indicates how well the model under consideration fits given observations.</li>
+                <li><b>4. Robustness: </b> This represents the system’s capability to handle differences and variances effectively.</li>
+                <li><b>5. DOE: </b> stands for the design of experiments, which represents the task design aiming to describe and explain information variation under hypothesized conditions to reflect variables.</li> 
+            </ul>
+
+            <h4><b>Q7. Define and explain selection bias?</b></h4><br>
+            <p>The selection bias occurs in the case when the researcher has to make a decision on which participant to study. The selection bias is associated with those researches when the participant selection is 
+                not random. The selection bias is also called the selection effect. The selection bias is caused by as a result of the method of sample collection.
+                Four types of selection bias are explained below:
+           </p><br>
+            <ul>
+                <li><b>1. Sampling Bias:</b>As a result of a population that is not random at all, some members of a population have fewer chances of getting included than others, resulting in a biased sample. 
+                    This causes a systematic error known as sampling bias.</li> 
+                <li><b>2. Time interval:</b>Trials may be stopped early if we reach any extreme value but if all variables are similar invariance, the variables with the highest variance have a higher chance
+                     of achieving the extreme value.</li>
+                <li><b>3. Data: </b> It is when specific data is selected arbitrarily and the generally agreed criteria are not followed.</li>
+                <li><b>4. Attrition:</b> Attrition in this context means the loss of the participants. It is the discounting of those subjects that did not complete the trial.</li>
+            </ul><br>
+
+            <h4><b>Q8. What is deep learning? What is the difference between deep learning and machine learning?</b></h4><br>
+            <p>Deep learning is a paradigm of machine learning. In deep learning,  multiple layers of processing are involved in order to extract high features from the data. The neural networks are designed in such a way that they try to simulate the human brain. 
+                Deep learning has shown incredible performance in recent years because of the fact that it shows great analogy with the human brain. 
+                The difference between machine learning and deep learning is that deep learning is a paradigm or a part of machine learning that is inspired by the structure and functions of the human brain called the artificial neural networks
+           </p><br>
+
+           <h4><b>Q9. How regularly must we update an algorithm in the field of machine learning?</b></h4><br>
+           <p>We do not want to update and make changes to an algorithm on a regular basis as an algorithm is a well-defined step procedure to solve any problem and if the steps keep on updating, it cannot be said well defined anymore. Also,
+                this brings in a lot of problems to the systems already implementing the algorithm as it becomes difficult to bring in continuous and regular changes. So, we should update an algorithm only in any of the following cases:
+          </p><br>
+           <ul>
+               <li>If you want the model to evolve as data streams through infrastructure, it is fair to make changes to an algorithm and update it accordingly.</li> 
+               <li>If the underlying data source is changing, it almost becomes necessary to update the algorithm accordingly.</li>
+               <li>If there is a case of non-stationarity, we may update the algorithm.</li>
+               <li>One of the most important reasons for updating any algorithm is its underperformance and lack of efficiency. So, if an algorithm lacks efficiency or underperforms it should be either replaced by some better algorithm or it must be updated.</li>
+           </ul><br>
+
+           <h4><b>Q 10. How will you treat missing values during data analysis?</b></h4><br>
+           <p>The impact of missing values can be known after identifying what kind of variables have the missing values.</p><br>
+           <ul>
+               <li>If the data analyst finds any pattern in these missing values, then there are chances of finding meaningful insights.</li> 
+               <li>In case of patterns are not found, then these missing values can either be ignored or can be replaced with default values such as mean, minimum, maximum, or median values.</li>
+               <li>If the missing values belong to categorical variables, then they are assigned with default values. If the data has a normal distribution, then mean values are assigned to missing values.</li>
+               <li>If 80% values are missing, then it depends on the analyst to either replace them with default values or drop the variables</li>
+           </ul><br>
+         </div>
+   </div>   
+</section> 
+
+    <?php
+    include 'footer.php';
+    ?>
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+</body>
+</html>

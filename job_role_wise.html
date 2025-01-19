@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <?php
+    include 'student_register.php';
+    include 'mentor_register.php'; 
+    include 'login.php';
+    include 'navbar.php';
+    ?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+    <title>Welcome | CareerTime</title>
+    <style> 
+      
+      h1{
+        text-align: center; 
+        font-size: 30px;  
+        width: 1580px; 
+        height: 25px;
+        background-color:  #00CED1; 
+        padding: 50px; 
+        text-transform: uppercase; 
+        position: fixed; 
+        top: 0;    
+       } 
+        .header a{ 
+        padding: 10px 20px; 
+        border: 3px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 400;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+       
+       .btnone{ 
+        background: #00CED1;
+        color: white;  
+        } 
+        .btnone:hover{ 
+            color: white;
+        }
+       .header {
+        position: fixed;
+        top: 5%;
+        left: 3%;
+       } 
+        
+       .leftside{
+        margin-top: 110px;
+        height: 400px; 
+        width: 400px;  
+        display: grid;
+        justify-content: space-around; 
+        align-items: center;
+        position: fixed;  
+       }
+       .leftone{
+        margin-left: 20px;  
+       }
+       .rightside{
+        margin-top: 110px;
+        height: 640px; 
+        width: 1155px;   
+        display: grid;
+        background-image: url(../CareerTime/IMG/blue_background4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-around; 
+        align-items: center;
+        margin-left: 420px; 
+        position: fixed; 
+        overflow: scroll;  
+       }
+       .rightone{
+        margin-left: 20px;   
+       }
+       .tips{
+        margin-left: 20px;    
+       }
+       h4{
+        text-align: center;    
+       }
+       .dropbtn {
+        background-color: #00CED1;
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        width: 400px;
+        border: none;
+        cursor: pointer;
+        display: block;
+      }
+      .dropbtn a{ 
+        padding: 12px 30px; 
+        border: 4px; 
+        outline: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;  
+        text-decoration: none;    
+        letter-spacing: 1px; 
+        font-family: "Muli" , serif; 
+        cursor: pointer; 
+        } 
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #00CED1;
+      }
+      .dropbtn{
+          margin-top: 1px; 
+      }
+    </style>
+</head>
+<body>
+  <h1>
+    <u>Job Role Wise Questions</u>
+</h1>    
+<section>
+   <div class="leftside" id="scroll">
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Softwaredeveloper.html" class="btnone">Software Developer</a>  
+            </div>
+        </div>
+       <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Webdeveloper1.html" class="btnone">Web Developers</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/DataScience.html" class="btnone">Data science</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/BusinessAnalyst.html" class="btnone">Business Analyst</a>  
+            </div>
+        </div>
+        <div class="leftone">
+            <div class="dropbtn">
+                <a href="../CareerTime/Networkadministrator.html" class="btnone">Network administrator</a>  
+            </div>
+        </div>
+   </div>
+
+   <div class="rightside" id="scrollone">
+        <div class="tips">  
+            <h4><b>Q1. What is a pseudo-class?</b></h4><br>
+                <b>Ans:</b>
+                <p>It is a CSS technique that sets the style when an element changes its state. E.g. style changes when mouse hover,
+                     different styles for visited or unvisited links, etc.</p><br>
+                <b>There are four different types of pseudo-classes:</b><br>
+                <ul>
+                    <li>1. Links: These pseudo-classes are used to style the link both in its normal state by default and when it has already been visited</li> 
+                    <li>2. Dynamic: Dynamic pseudo-classes can be applied to any element to define how they are shown when the cursor is located on them, or by clicking on them or when they are selected</li>
+                    <li>3. Structural: Structural pseudo-classes allow to style elements based on an exact numerical position of the element</li>
+                    <li>4. Others: Some elements can be styled differently based on the language or what type of label they are not.</li>
+                </ul>
+         </div>
+   </div>
+    
+</section> 
+
+    <?php
+    include 'footer.php';
+    ?>
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+    
+
+
+</body>
+</html>
